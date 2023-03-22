@@ -2,7 +2,7 @@ from pwn import *
 MIN = 0xfffff
 MAX = 0x0
 ct = 0 
-while(ct < 0x4000):
+while(ct < 0x400):
     p = process("./main")
     off = int(p.readline()[:-1],10)
     p.close()

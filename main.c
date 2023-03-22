@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <float.h>
 char buf[0x10] = {};
 int main()
 {

@@ -20,5 +20,5 @@ More research is needed.
 - Run the python script several times to see the range of the offset: [exp.py](./exp.py)
 
 
-# Max Range in Testing
+# Max Range in Test
 0 - 0x1fff

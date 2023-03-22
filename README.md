@@ -17,7 +17,7 @@ But we need to overflow at least more than one page on bss, which is rare.
 
 ![PoC](image.png)
 
-# Max Range in Test
+# Max Range
 0 - 0x1fff
 
 # Source Code Reading

@@ -20,10 +20,8 @@ But we need to overflow at least more than one page on bss, which is rare.
 # Max Range in Test
 0 - 0x1fff
 
-# Source code Reading
-(I find the file after reading this [article][1])
-
-The source code confirmed the correctness of my code:
+# Source Code Reading
+I locate the file after reading this [article][1] and the source code confirmed the correctness of my code:
 
 https://elixir.bootlin.com/linux/v4.11.4/source/drivers/char/random.c#L2089
 

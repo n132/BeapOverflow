@@ -17,7 +17,7 @@ More research is needed.
 
 # PoV
 - Compile the c coude: (main.c)[./main.c]
-- Run the python script several times to see the range of the offset: ![exp.py][./exp.py]
+- Run the python script several times to see the range of the offset: [exp.py][./exp.py]
 
 
 # Max Range in Testing

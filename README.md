@@ -27,7 +27,6 @@ https://elixir.bootlin.com/linux/v4.11.4/source/drivers/char/random.c#L2089
 
 https://elixir.bootlin.com/linux/v4.11.4/source/arch/x86/kernel/process.c#L476
 
-And I'll try to create an issue for linux kernel to see if the developers think it's a bug.
 
 
 [1]: https://www.cnblogs.com/wangaohui/p/7122653.html

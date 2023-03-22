@@ -11,10 +11,6 @@ This trick is even feasible for recent glibc, which implemented safe linking.
 But we need to overflow at least more than one page on bss, which is rare.
 
 
-More research is needed.
-- Read the source code
-- ...
-
 # PoC
 - Compile the c coude: [main.c](./main.c)
 - Run the python script several times to see the range of the offset: [exp.py](./exp.py)
@@ -24,3 +20,14 @@ More research is needed.
 # Max Range in Test
 0 - 0x1fff
 
+# Source code Reading
+(I find the file after reading this [article][1])
+
+The source code confirmed the correctness of my code:
+https://elixir.bootlin.com/linux/v4.11.4/source/drivers/char/random.c#L2089
+https://elixir.bootlin.com/linux/v4.11.4/source/arch/x86/kernel/process.c#L476
+
+And I'll try to create an issue for linux kernel to see if the developers think it's a bug.
+
+
+[1]: https://www.cnblogs.com/wangaohui/p/7122653.html

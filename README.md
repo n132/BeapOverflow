@@ -15,7 +15,7 @@ More research is needed.
 - Read the source code
 - ...
 
-# PoV
+# PoC
 - Compile the c coude: [main.c](./main.c)
 - Run the python script several times to see the range of the offset: [exp.py](./exp.py)
 

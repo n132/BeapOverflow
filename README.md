@@ -4,7 +4,7 @@ This is a finding for address randomization. There could be no gap between the b
 
 It's not a secure design since people can overflow from bss to heap and partially write important data on the tcache management structure. 
 
-We can brute force 0x1fff times (excepted) to perform BeapOverflow.
+We can brute force 0x2000times (excepted) to perform BeapOverflow.
 
 This trick is even feasible for recent glibc, which implemented safe linking.
 

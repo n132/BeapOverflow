@@ -34,7 +34,7 @@ https://elixir.bootlin.com/linux/v4.11.4/source/arch/x86/kernel/process.c#L476
 
 # Reason
 
-Still using x86's value 0x2000. Btw, ARM64 and MIPS did a better job.
+Still using x86's value 0x2000 even though we have more space.
 
 
 [1]: https://www.cnblogs.com/wangaohui/p/7122653.html

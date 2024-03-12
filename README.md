@@ -1,6 +1,6 @@
 # Update
 
-This issue is partially fixed at this [commit][https://github.com/torvalds/linux/commit/685d98211273f60e38a6d361b62d7016c545297e#diff-4dd434086fa3d909f159202a82af12e0f3409a90a28d45dededeeac8be2c6810L1033]
+This issue is partially fixed at this [commit][2]
 But the .bss can still connect to the heap. The chance is 1024/1G, which is small enough
 
 # BeapOverflow (Bss Overflow -> Heap Overflow)
@@ -38,3 +38,4 @@ Still using x86's value 0x2000. Btw, ARM64 and MIPS did a better job.
 
 
 [1]: https://www.cnblogs.com/wangaohui/p/7122653.html
+[2]: https://github.com/torvalds/linux/commit/685d98211273f60e38a6d361b62d7016c545297e#diff-4dd434086fa3d909f159202a82af12e0f3409a90a28d45dededeeac8be2c6810L1033

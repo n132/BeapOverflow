@@ -1,6 +1,6 @@
 # Update
 
-This issue is partially fixed at this [commit][2]
+This issue is fixed at this [commit][2]
 But the .bss can still connect to the heap. The chance is 1024/1G, which is small enough
 
 # BeapOverflow (Bss Overflow -> Heap Overflow)

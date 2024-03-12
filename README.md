@@ -1,3 +1,8 @@
+# Update
+
+This issue is partially fixed at https://github.com/torvalds/linux/commit/685d98211273f60e38a6d361b62d7016c545297e#diff-4dd434086fa3d909f159202a82af12e0f3409a90a28d45dededeeac8be2c6810L1033
+But the .bss can still connect to the heap. The chance is 1024/1G, which is small enough
+
 # BeapOverflow (Bss Overflow -> Heap Overflow)
 
 This is a finding for address randomization. There could be no gap between the bss segment and the heap area.

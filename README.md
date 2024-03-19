@@ -11,8 +11,6 @@ It's not a secure design since people can overflow from bss to heap and partiall
 
 We can brute force 0x2000 times (ideally) to perform BeapOverflow.
 
-This trick is even feasible for recent glibc, which implemented safe linking.
-
 But we need to overflow at least more than one page on bss, which is rare.
 
 

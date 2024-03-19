@@ -16,7 +16,7 @@ But we need to overflow at least more than one page on bss, which is rare.
 
 # PoC
 - Compile the c coude: [main.c](./main.c)
-- Run the python script several times to see the range of the offset: [exp.py](./exp.py)
+- Run the Python script several times to see the range of the offset: [exp.py](./exp.py)
 
 ![PoC](image.png)
 

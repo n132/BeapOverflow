@@ -5,13 +5,13 @@ But the .bss can still connect to the heap. The chance is 1024/1G, which is smal
 
 # BeapOverflow (Bss Overflow -> Heap Overflow)
 
-This is a finding for address randomization. There could be no gap between the bss segment and the heap area.
+This is a finding for address randomization. There could be no gap between the `bss` segment and the heap area.
 
-It's not a secure design since people can overflow from bss to heap and partially write important data on the tcache management structure. 
+It's not a secure design since people can overflow from `bss` to heap and partially write important data on the tcache management structure. 
 
 We can brute force 0x2000 times (ideally) to perform BeapOverflow.
 
-But we need to overflow at least more than one page on bss, which is rare.
+But we need to overflow at least more than one page on `bss`, which is rare.
 
 
 # PoC
@@ -26,13 +26,13 @@ But we need to overflow at least more than one page on bss, which is rare.
 # Source Code Reading
 I located the file after reading this [article][1] and the source code confirmed the correctness of my code:
 
-https://elixir.bootlin.com/linux/v4.11.4/source/drivers/char/random.c#L2089
+[https://elixir.bootlin.com/linux/v4.11.4/source/drivers/char/random.c#L2089
 
-https://elixir.bootlin.com/linux/v4.11.4/source/arch/x86/kernel/process.c#L476
+https://elixir.bootlin.com/linux/v4.11.4/source/arch/x86/kernel/process.c#L476](https://elixir.bootlin.com/linux/v6.8/source/arch/x86/kernel/process.c#L1031)
 
 # Reason
 
-Still using x86's value 0x2000 even though we have more space.
+Still using x86's value(0x2000) even though we have more space.
 
 
 [1]: https://www.cnblogs.com/wangaohui/p/7122653.html

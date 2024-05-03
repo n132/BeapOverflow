@@ -26,9 +26,7 @@ But we need to overflow at least more than one page on `bss`, which is rare.
 # Source Code Reading
 I located the file after reading this [article][1] and the source code confirmed the correctness of my code:
 
-[https://elixir.bootlin.com/linux/v4.11.4/source/drivers/char/random.c#L2089
-
-https://elixir.bootlin.com/linux/v4.11.4/source/arch/x86/kernel/process.c#L476](https://elixir.bootlin.com/linux/v6.8/source/arch/x86/kernel/process.c#L1031)
+https://elixir.bootlin.com/linux/v6.8/source/arch/x86/kernel/process.c#L1031
 
 # Reason
 
